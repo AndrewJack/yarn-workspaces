@@ -1,0 +1,6 @@
+{
+  "name": "delivery-core",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "private": true
+}
