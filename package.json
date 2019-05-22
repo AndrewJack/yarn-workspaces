@@ -1,10 +1,39 @@
 {
-	"private": true,
+  "private": true,
   "workspaces": {
-		"packages": ["packages/*"],
-    "nohoist": ["**/react-native", "**/react-native/**", "**/delivery-core"]
-	},
-	"devDependencies": {
-		"lerna": "2.9.0"
-	}
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
+  "scripts": {
+    "clean-pods": "rm -rf packages/*/ios/Pods",
+    "flow-symlinks": "./node_modules/.bin/flow-mono create-symlinks",
+    "lerna-check": "lerna run test && lerna run lint && lerna run schemas && lerna run flow",
+    "postinstall": "yarn run flow-symlinks",
+    "reset-modules": "rm -rf node_modules/ packages/*/node_modules",
+    "reset-rn": "watchman watch-del-all; rm -fr $TMPDIR/react-*; rm -rf $TMPDIR/haste-map-react-native-packager-*",
+    "reset": "yarn reset-modules && yarn reset-rn"
+  },
+  "flow-mono": {
+    "create-symlinks": {
+      "ignore": [
+        "react-native"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "glob": "7.1.4",
+    "flow-mono-cli": "1.5.0",
+    "jest": "^24.8.0",
+    "lerna": "3.14.1",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "16.8.3"
+  }
 }

@@ -7,15 +7,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.3.0-alpha.2",
-    "react-native": "0.54.2",
-    "delivery-core": "0.0.1"
+    "delivery-core": "0.0.1",
+    "react": "16.8.3",
+    "react-native": "0.59.8"
   },
   "devDependencies": {
-    "babel-jest": "22.4.1",
-    "babel-preset-react-native": "4.0.0",
-    "jest": "22.4.2",
-    "react-test-renderer": "16.3.0-alpha.2"
+    "flow-bin": "0.92.1"
   },
   "jest": {
     "preset": "react-native"
