@@ -1,6 +1,16 @@
 # yarn-workspaces
 React Native &amp; yarn workspaces
 
+
+## Things to remember when using workspaces
+
+- Flow runs in each package not on the whole workspace
+- apply nohoist to all modules that contain native code (ios & android code)
+  - Avoids ios and android build directory clashes
+  - More likely to work with react-native link
+  - Pure JS libraries work fine without nohoist
+- Always `yarn install` at the root not in a `package/rider` directory
+
 ## Links
 
 - https://yarnpkg.com/lang/en/docs/workspaces/
