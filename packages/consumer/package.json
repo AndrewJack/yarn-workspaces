@@ -6,10 +6,18 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
+  "workspaces": {
+    "nohoist": [
+      "react-native-gesture-handler",
+      "react-native-reanimated"
+    ]
+  },
   "dependencies": {
     "delivery-core": "0.0.1",
     "react": "16.8.3",
-    "react-native": "0.59.8"
+    "react-native": "0.59.8",
+    "react-native-gesture-handler": "1.2.1",
+    "react-native-reanimated": "1.0.1"
   },
   "devDependencies": {
     "flow-bin": "0.92.1"

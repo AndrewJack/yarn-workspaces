@@ -2,5 +2,9 @@
   "name": "delivery-core",
   "version": "0.0.1",
   "main": "src/index.js",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "react-native-gesture-handler": "1.2.1",
+    "react-native-reanimated": "1.0.1"
+  }
 }

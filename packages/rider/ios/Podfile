@@ -29,8 +29,8 @@ target 'rider' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # Third party React Native libraries
-  # pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
-  # pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
 end
 
 target 'riderTests' do

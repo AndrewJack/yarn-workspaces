@@ -6,6 +6,8 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
+  - React (0.59.8):
+    - React/Core (= 0.59.8)
   - React/Core (0.59.8):
     - yoga (= 0.59.8.React)
   - React/CxxBridge (0.59.8):
@@ -49,6 +51,10 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - RNGestureHandler (1.2.1):
+    - React
+  - RNReanimated (1.0.1):
+    - React
   - yoga (0.59.8.React)
 
 DEPENDENCIES:
@@ -62,6 +68,8 @@ DEPENDENCIES:
   - React/RCTImage (from `../node_modules/react-native`)
   - React/RCTNetwork (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga/yoga.podspec`)
 
 SPEC REPOS:
@@ -77,6 +85,10 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga/yoga.podspec"
 
@@ -86,8 +98,10 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 76e6aa2b87d05eb6cccb6926d72685c9a07df152
+  RNGestureHandler: aea90f0ad8e35fec23438db6fc3ad79be58bb734
+  RNReanimated: c8dd490ca98a4edcba229bfa49f2516c95a43afb
   yoga: 92b2102c3d373d1a790db4ab761d2b0ffc634f64
 
-PODFILE CHECKSUM: 768e22a933f4b4075cdbf324f854a5d1eb9f69bd
+PODFILE CHECKSUM: c5ce8a9dacc03137e67aad9046f7111dcb70c329
 
 COCOAPODS: 1.6.1
