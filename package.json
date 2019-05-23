@@ -5,8 +5,10 @@
       "packages/*"
     ],
     "nohoist": [
-      "**/react-native",
-      "**/react-native/**"
+      "consumer/react-native",
+      "consumer/react-native/**",
+      "rider/react-native",
+      "rider/react-native/**"
     ]
   },
   "scripts": {
